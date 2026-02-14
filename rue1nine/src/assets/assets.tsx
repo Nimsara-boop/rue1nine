@@ -1,0 +1,51 @@
+import hero1 from './hero1.png'
+import hero2 from './hero2.png'
+import hero3 from './hero3.png'
+import tshirt1a from './tshirt1a.png'
+import tshirt1b from './tshirt1b.png'
+import tshirt1c from './tshirt1c.png'
+import tshirt2a from './tshirt2a.png'
+import tshirt2b from './tshirt2b.png'
+import tshirt2c from './tshirt2c.png'
+import tshirt3a from './tshirt3a.png'
+import tshirt3b from './tshirt3b.png'
+import tshirt3c from './tshirt3c.png'
+
+
+
+export const assets={
+    hero1,
+    hero2,
+    hero3,
+    tshirt1a,
+    tshirt1b,
+    tshirt1c,
+    tshirt2a,
+    tshirt2b,
+    tshirt2c,
+    tshirt3a,
+    tshirt3b,
+    tshirt3c,
+}
+
+export const tshirtData=[
+    {
+        name: 'Unisex Red T-Shirt',
+        price: 19.99,
+        description: 'A comfortable and stylish unisex red t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
+        images: [tshirt1a, tshirt1b, tshirt1c],
+    },
+
+    {
+        name: 'Mens White T-Shirt',
+        price: 19.99,
+        description: 'A comfortable and stylish white t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
+        images: [tshirt2a, tshirt2b, tshirt2c],
+    },
+    {
+        name: 'Mens Green T-Shirt',
+        price: 19.99,
+        description: 'A comfortable and stylish mens green t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
+        images: [tshirt3a, tshirt3b, tshirt3c],
+    }
+]
