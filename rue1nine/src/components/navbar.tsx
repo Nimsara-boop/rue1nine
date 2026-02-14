@@ -4,7 +4,7 @@ import {assets} from '../assets/assets'
 function Navbar() {
   return (
     <div className="absolute top-0 left-0 w-full z-10">
-        <div className="container mx-auto  flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-white ">
+        <div className="container mx-auto  flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-white/30 backdrop-blur-md shadow-md">
             <ul className="hidden md:flex gap-7">
                 <img src={assets.logo_light} alt="Logo" className="w-32" /></ul>
             <ul className='gap-5 flex'>
