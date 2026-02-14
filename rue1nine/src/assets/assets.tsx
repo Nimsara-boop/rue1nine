@@ -10,8 +10,9 @@ import tshirt2c from './tshirt2c.png'
 import tshirt3a from './tshirt3a.png'
 import tshirt3b from './tshirt3b.png'
 import tshirt3c from './tshirt3c.png'
-
-
+import logo_dark from './logo_dark.png'
+import logo_light from './logo_light.png'
+import profile from './profile.svg'
 
 export const assets={
     hero1,
@@ -26,6 +27,9 @@ export const assets={
     tshirt3a,
     tshirt3b,
     tshirt3c,
+    logo_light,
+    logo_dark,
+    profile,
 }
 
 export const tshirtData=[
