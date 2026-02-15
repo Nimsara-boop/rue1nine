@@ -16,6 +16,9 @@ import profile from './profile.svg'
 import hero from './hero.svg'
 import T1a from  './T1a.mp4'
 import T2a from './T2a.mp4'
+import T2c from './T2c.png'
+import T2d from './T2d.png'
+import T2e from './T2e.png'
 
 export const assets={
     hero,
@@ -36,6 +39,11 @@ export const assets={
     profile,
     T1a,
     T2a,
+    T2c,
+    T2d, 
+    T2e,
+
+    
 
 }
 

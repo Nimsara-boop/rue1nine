@@ -23,8 +23,12 @@ function PrestigeLine() {
           <h1 className="text-white font-light text-9xl">Prestige Line</h1>
         </div>
 
-        <div>
-          <img src={assets.}/>
+        <div className="flex flex-row mt-4 ">
+          <img src={assets.T2e} className="w-2/3"/>
+          <div className=" px-4">
+            <h1 className="text-8xl font-thin py-20">Dress Prestige</h1>
+            <p>Connect with us to commission your bespoke T-shirt from this exclusive collection. Personalize every detail — from the vehicle of your choice to a curated color palette — and experience craftsmanship of the highest caliber, delivered with impeccable precision and refinement.</p>
+          </div>
         </div>
       </div>
     </div>
