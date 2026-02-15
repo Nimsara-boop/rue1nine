@@ -13,8 +13,12 @@ import tshirt3c from './tshirt3c.png'
 import logo_dark from './logo_dark.png'
 import logo_light from './logo_light.png'
 import profile from './profile.svg'
+import hero from './hero.svg'
+import T1a from  './T1a.mp4'
+import T2a from './T2a.mp4'
 
 export const assets={
+    hero,
     hero1,
     hero2,
     hero3,
@@ -30,6 +34,9 @@ export const assets={
     logo_light,
     logo_dark,
     profile,
+    T1a,
+    T2a,
+
 }
 
 export const tshirtData=[

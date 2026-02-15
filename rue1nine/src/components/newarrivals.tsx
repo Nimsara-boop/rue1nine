@@ -1,17 +1,13 @@
 import React from 'react'
-import {assets} from '../assets/assets'
+import { assets } from '../assets/assets'
+
 
 function NewArrivals() {
   return (
-    <div className="min-h-screen bg-cover bg-center w-full overflow-hidden" 
-        style={{backgroundImage: `url(${assets.hero2})`}} 
-        id='Header'>
-            <div className="mt-80 px-4"> 
-                <h1 className='text-9xl font-light text-white'>New Arrivals</h1>
-                <p className='text-lg text-white mb-4'>Discover the latest additions to our collection. Shop now and stay ahead of the trends with our new arrivals.</p>
-                <button className='bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300'>Shop Now</button>
-            </div>
-    
+    <div>
+        <div className="min-h-screen bg-cover bg-center w-full overflow-hidden"
+                    style={{ backgroundImage: `url(${assets.hero2})` }}
+                    id='NewArrivals'></div>
     </div>
   )
 }
