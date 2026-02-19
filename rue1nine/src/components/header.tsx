@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 
 
 function Header() {
+
+  
   return (
     <div className="min-h-screen bg-cover bg-center flex items-center justify-center w-full overflow-hidden" 
         style={{backgroundImage: `url(${assets.hero})`}} 

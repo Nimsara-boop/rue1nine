@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 function PrestigeLine() {
   return (
     <div>
-      <div className="min-h-screen bg-cover bg-center w-full overflow-hidden"
+      <div className=" min-h-screen bg-cover bg-center w-full overflow-hidden"
         id='NewArrivals'>
         <video autoPlay loop muted playsInline className="absolute top-32 left-10 w-1/3 h-4/6 object-cover" >
           <source src={assets.T2a} type="video/mp4" />
@@ -20,7 +20,7 @@ function PrestigeLine() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-screen">
           <img src={assets.logo_light} className="w-1/5"/>
-          <h1 className="text-white font-light text-9xl">Prestige Line</h1>
+          <h1 className="text-white font-light text-9xl">The Prestige Line</h1>
         </div>
 
         <div className="flex flex-row mt-4 ">

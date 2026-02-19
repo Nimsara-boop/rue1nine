@@ -7,23 +7,25 @@ import Navbar from './components/navbar'
 import NewArrivals from './components/newarrivals'
 import HeaderPremium from './components/headerpremium'
 import PrestigeLine from './components/prestigeline'
+import Home from './components/home'
 
 function App() {  
   
 
   return (
     <>
-    <Navbar/>
+    
     
     <Router>
       <Routes>
         <Route path="/" element={
           <>
-          <Header/>
-          <HeaderNewArrivals/>
-          <HeaderPremium/>
+          <Home/>
+          <Navbar/>
+          
           </>}
           />
+        <Route path="/home" element={<Header/>}/>
         <Route path="/NewArrivals" element={<NewArrivals/>} />
         <Route path="/PrestigeLine" element={<PrestigeLine/>} />
 
