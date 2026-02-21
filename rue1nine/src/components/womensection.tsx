@@ -2,11 +2,11 @@ import { assets } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
 import { tshirtData } from '../assets/assets'
 
-function MenSection() {
+function WomenSection() {
   const navigate = useNavigate()
 
   return (
-    <div id='MenSection' className="flex flex-col bg-[#b0b3af]">
+    <div id='WomenSection' className="flex flex-col bg-[#b0b3af]">
       <div className='mt-23 bg-[#b0b3af] py-8 px-4 font-light'>Filters</div>
       <div className="grid grid-cols-3 mx-4 items-center justify-center w-full">
       {tshirtData.map((item)=>(
@@ -24,4 +24,4 @@ function MenSection() {
   )
 }
 
-export default MenSection
+export default WomenSection

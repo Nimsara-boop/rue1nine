@@ -20,7 +20,10 @@ function Home() {
                         initial={{ y: '100vw', opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 5, ease: "easeOut" }}
-                        className="text-2xl font-light hover:underline hoer:underline-gray-400 w-1/2 h-screen relative">
+                        className="text-2xl font-light hover:underline hoer:underline-gray-400 w-1/2 h-screen relative"
+                        onClick={() => {
+                            mensnavigate("/WomenSection");
+                        }}>
                         <div className="w-full h-full bg-center items-center flex justify-center overflow-hidden"
                             style={{ backgroundImage: `url(${assets.WomenSection})` }}>
                             <p className="text-white text-4xl font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500">

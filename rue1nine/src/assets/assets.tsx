@@ -47,6 +47,7 @@ export const assets={
 
 export const tshirtData=[
     {
+        id:1,
         name: 'Unisex Black T-Shirt',
         price: 19.99,
         description: 'A comfortable and stylish unisex black t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
@@ -54,12 +55,14 @@ export const tshirtData=[
     },
 
     {
+        id:2,
         name: 'Mens White T-Shirt',
         price: 19.99,
         description: 'A comfortable and stylish white t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
         images: [tshirt2a, tshirt2b],
     },
     {
+        id:3,
         name: 'Prestige Mens T-Shirt',
         price: 19.99,
         description: 'A comfortable and stylish mens t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
