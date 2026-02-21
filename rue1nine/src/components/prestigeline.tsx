@@ -1,4 +1,3 @@
-import React from 'react'
 import { assets } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
 
@@ -20,7 +19,7 @@ function PrestigeLine() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-screen">
           <img src={assets.logo_light} className="w-1/5"/>
-          <h1 className="text-white font-light text-9xl">The Prestige Line</h1>
+          <h1 className="text-gray-200 font-light text-8xl">The Prestige Line</h1>
         </div>
 
         <div className="flex flex-row mt-4 ">
