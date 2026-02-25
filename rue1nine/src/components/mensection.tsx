@@ -12,7 +12,9 @@ function MenSection() {
       {tshirtData.map((item)=>(
         <div key={item.id}
         className="w-4/5 h-full mb-4 border-1 border-gray-500  bg-[#ADB5AB] "
-        onClick={()=> navigate(`/product/${item.id}`)}
+        onClick={()=> {navigate(`/product/${item.id}`);
+          window.scrollTo({ top: 0, behavior: "smooth" }); }}
+        
         >
           <img src={item.images[0]} alt={item.name} className=" mt-10  w-full h-100 object-cover"/>
           <h2>{item.name}</h2>
