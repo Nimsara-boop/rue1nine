@@ -10,7 +10,7 @@ function NewArrivals() {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="min-h-screen bg-cover bg-center w-full bg-fixed overflow-hidden"
+      <div className="min-h-screen bg-cover bg-center w-full bg-fixed overflow-hidden "
         style={{ backgroundImage: `url(${assets.f_turtle_2})` }}
         id='NewArrivals'>
         <div className='mt-80 ml-210'>
