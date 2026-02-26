@@ -2,6 +2,7 @@ import { assets } from '../assets/assets'
 import { motion } from 'framer-motion'
 import { useNavigate } from "react-router-dom"
 import { useState } from 'react'
+import Carousel from './carousel.tsx'
 
 function Home() {
     const navigate = useNavigate();
@@ -12,18 +13,22 @@ function Home() {
         <div>
             {/*    HEADER   */}
 
-            <div className="min-h-screen bg-fixed bg-cover bg-center flex items-center justify-center w-full overflow-hidden"
+            <div className="min-h-screen bg-fixed bg-cover bg-center flex flex-col items-center justify-center w-full overflow-hidden"
                 style={{ backgroundImage: `url(${assets.bg})` }}
                 id='Header'>
-
+                <div className='pt-50'>
+                    <Carousel />
+                </div>
                 <div className="flex flex-row w-full overflow-hidden items-center justify-center">
                     <motion.div
                         initial={{ y: '-100vw', opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 3, ease: "easeOut" }}
                         className="w-1/2 h-screen relative group cursor-pointer overflow-hidden"
-                        onClick={()=> {navigate(`/WomenSection`);
-                        window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                        onClick={() => {
+                            navigate(`/WomenSection`);
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
                         onMouseEnter={() => setIsWHovered(true)}
                         onMouseLeave={() => setIsWHovered(false)}
                     >
@@ -44,8 +49,10 @@ function Home() {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 3, ease: "easeOut" }}
                         className="w-1/2 h-screen relative group cursor-pointer overflow-hidden"
-                        onClick={()=> {navigate(`/MenSection`);
-                        window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                        onClick={() => {
+                            navigate(`/MenSection`);
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
                         onMouseEnter={() => setIsMHovered(true)}
                         onMouseLeave={() => setIsMHovered(false)}
                     >
@@ -70,14 +77,18 @@ function Home() {
             <div className="min-h-screen bg-cover bg-center cursor-pointer w-full overflow-hidden"
                 style={{ backgroundImage: `url(${assets.new2})` }}
                 id='NewArrivals'
-                onClick={()=> {navigate(`/NewArrivals`);
-                window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+                onClick={() => {
+                    navigate(`/NewArrivals`);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                }}>
                 <div className="mt-80 px-4">
                     <h1 className='text-9xl font-light text-white'>New Arrivals</h1>
                     <p className='text-lg text-white mb-4'>Discover the latest additions to our collection. Shop now and stay ahead of the trends with our new arrivals.</p>
                     <button className='bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300'
-                        onClick={()=> {navigate(`/NewArrivals`);
-                        window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+                        onClick={() => {
+                            navigate(`/NewArrivals`);
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}>
                         Shop Now
                     </button>
                 </div>
@@ -89,14 +100,16 @@ function Home() {
             <div className="min-h-screen bg-cover bg-center w-full overflow-hidden hover:cursor-pointer"
                 style={{ backgroundImage: `url(${assets.prestige})` }}
                 id='Premium'
-                onClick={()=> {navigate(`/PrestigeLine`);
-                        window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+                onClick={() => {
+                    navigate(`/PrestigeLine`);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                }}>
 
                 <div className="mt-80 px-4 ">
                     <h1 className='text-9xl font-light text-white'>Prestige Line</h1>
                     <p className='text-lg text-white mb-4'>A curated selection built to deliver lasting quality and refined style.</p>
                     <button className='bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300'
-                        >
+                    >
                         Shop Now
                     </button>
                 </div>

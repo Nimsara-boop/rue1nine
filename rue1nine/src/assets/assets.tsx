@@ -25,6 +25,7 @@ import hero_prestige from './hero_prestige.jpg'
 import mens2 from './mens2.jpg'
 import new2 from './new2.jpg'
 
+
 export const assets={
     bg,
     hero,
