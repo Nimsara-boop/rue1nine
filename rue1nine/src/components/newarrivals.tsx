@@ -1,6 +1,5 @@
-import React from 'react'
 import { assets } from '../assets/assets'
-import { tshirtData } from '../assets/assets'
+import { wtshirtData } from '../assets/assets'
 import { useNavigate } from "react-router-dom"
 
 
@@ -19,10 +18,16 @@ function NewArrivals() {
         </div>
 
         <div className="backdrop-blur sm:flex sm:flex-col md:grid md:grid-cols-3 px-4 items-center justify-center w-full py-4 ml-4 ">
-          {tshirtData.map((item) => (
+          {wtshirtData.map((item) => (
             <div key={item.id}
               className=" backdrop-blur px-4 sm:w-1/2 lg:w-4/5 h-full mb-4 border-1 border-gray-500 bg-[#ADB5AB] "
-              onClick={() => navigate(`/product/${item.id}`)}
+                  onClick={() => {
+      if (item.id === 3) {
+        navigate("/PrestigeLine");
+      } else {
+        navigate(`/product/${item.id}`);
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });}}
             >
               <img src={item.images[0]} alt={item.name} className=" mt-10  w-full h-100 object-cover" />
               <h2 className='font-light text-xl'>{item.name}</h2>

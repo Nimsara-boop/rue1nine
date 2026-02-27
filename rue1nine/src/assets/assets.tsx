@@ -24,7 +24,16 @@ import newarrivals from './newarrivals.png'
 import hero_prestige from './hero_prestige.jpg'
 import mens2 from './mens2.jpg'
 import new2 from './new2.jpg'
-
+import hd1 from './hd1.png'
+import hd2 from './hd2.png'
+import hd3 from './hd3.png'
+import hd4 from './hd4.png'
+import ct2m from './ct2m.jpg'
+import ct2w from './ct2w.jpg'
+import tt2w from './tt2w.jpg'
+import tt2m from './tt2m.jpg'
+import pt2w from './pt2w.jpg'
+import pt2m from './pt2m.jpg'
 
 export const assets={
     bg,
@@ -53,31 +62,71 @@ export const assets={
     f_turtle_2,
     mens2,
     new2,
+    hd1,
+    hd2,
+    hd3,
+    hd4,
+    ct2m,
+    ct2w,
+    tt2w,
+    tt2m,
+    pt2w,
+    pt2m,
 
 }
-
-
-export const tshirtData=[
+export const wtshirtData=[
     {
         id:1,
-        name: 'Unisex Black T-Shirt',
+        name: 'Black Short Sleeve Cool Tee',
         price: 19.99,
         description: 'A comfortable and stylish unisex black t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
         images: [tshirt1a, tshirt1b],
+        hoverimage: ct2w,
     },
 
     {
         id:2,
-        name: 'Mens White T-Shirt',
+        name: 'White Short Sleeve Turtle Tee',
         price: 19.99,
         description: 'A comfortable and stylish white t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
         images: [tshirt2a, tshirt2b],
+        hoverimage: tt2w,
     },
     {
         id:3,
-        name: 'Prestige Mens T-Shirt',
+        name: 'The Prestige Line T-Shirt',
         price: 19.99,
         description: 'A comfortable and stylish mens t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
-        images: [tshirt3a, tshirt3b]
+        images: [tshirt3a, tshirt3b],
+        hoverimage: pt2w,
+    }
+]
+
+
+export const mtshirtData=[
+    {
+        id:1,
+        name: 'Black Short Sleeve Cool Tee',
+        price: 19.99,
+        description: 'A comfortable and stylish unisex black t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
+        images: [tshirt1a, tshirt1b],
+        hoverimage: ct2m,
+    },
+
+    {
+        id:2,
+        name: 'White Short Sleeve Turtle Tee',
+        price: 19.99,
+        description: 'A comfortable and stylish white t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
+        images: [tshirt2a, tshirt2b],
+        hoverimage: tt2m,
+    },
+    {
+        id:3,
+        name: 'The Prestige Line Mens T-Shirt',
+        price: 19.99,
+        description: 'A comfortable and stylish mens t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
+        images: [tshirt3a, tshirt3b],
+        hoverimage: pt2m,
     }
 ]
