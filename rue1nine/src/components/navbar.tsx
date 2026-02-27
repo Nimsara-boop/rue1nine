@@ -25,7 +25,7 @@ function Navbar() {
 
             <ul className='gap-5 flex font-light text-lg tracking-widest'>
                 <a href="#Header" 
-                className="cursor-pointer text-black px-4   hover:scale-110"
+                className="cursor-pointer text-black px-4 hover:scale-110"
                 onClick={()=> {
                 navigate("/");
     window.scrollTo({ top: 0, behavior: "smooth" });}}
@@ -46,8 +46,11 @@ function Navbar() {
     window.scrollTo({ top: 0, behavior: "smooth" });}}>
                     Women
                 </a>
-                <a href="/" 
-                className="cursor-pointer text-black px-4  hover:scale-110">
+                <a href="#ruesWorld" 
+                className="cursor-pointer text-black px-4  hover:scale-110"
+                onClick={()=> {
+                navigate("/RuesWorld");
+    window.scrollTo({ top: 0, behavior: "smooth" });}}>
                     Rue's World
                 </a>
 

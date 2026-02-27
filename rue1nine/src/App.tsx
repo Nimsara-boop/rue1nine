@@ -8,6 +8,7 @@ import Home from './components/home'
 import MenSection from './components/mensection'
 import WomenSection from './components/womensection'
 import ProductPage from './components/productpage'
+import RuesWorld from './components/ruesworld'
 
 function App() {  
   
@@ -27,6 +28,7 @@ function App() {
         <Route path="/MenSection" element={<MenSection/>}/>
         <Route path="/WomenSection" element={<WomenSection/>}/>
         <Route path="/product/:id" element={<ProductPage/>}/>
+        <Route path="/RuesWorld" element={<RuesWorld/>}/>
       </Routes>
       <Footer/>
     </Router>

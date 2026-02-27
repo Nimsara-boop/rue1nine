@@ -1,17 +1,17 @@
 import { assets } from '../assets/assets'
 import { useNavigate, } from 'react-router-dom'
-import { wtshirtData } from '../assets/assets'
+import { tshirtData } from '../assets/assets'
 
 function WomenSection() {
   const navigate = useNavigate()
 
   return (
     <div id='WomenSection' className="flex flex-col items-center justify-center overflow-clip pl-4"
-    //style={{ backgroundImage: `url(${assets.newarrivals})` }}
+    style={{ backgroundImage: `url(${assets.w5})` }}
     >
       <div className='mt-23 py-8 px-4 font-light'>Filters</div>
-      <div className=" backdrop-blur sm:flex sm:flex-col md:grid md:grid-cols-3 px-4 items-center justify-center w-full py-4 ml-4 overflow-hidden ">
-        {wtshirtData.map((item) => (
+      <div className="  sm:flex sm:flex-col md:grid md:grid-cols-3 px-4 items-center justify-center w-full py-4 ml-4 overflow-hidden ">
+        {tshirtData.map((item) => (
           <div key={item.id}
             className=" px-4 sm:w-1/2 lg:w-4/5 h-full mb-4 border-gray-500 bg-[#ADB5AB] "
             onClick={() => {
@@ -33,7 +33,7 @@ function WomenSection() {
         ))}
       </div>
 
-      <div className='text-black mt-12 text-4xl font-light mb-8'>- End of Collection -</div>
+      <div className='text-white mt-12 text-4xl font-light mb-8'>- End of Collection -</div>
 
     </div>
   )

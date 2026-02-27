@@ -1,10 +1,10 @@
 import bg from './bg.jpeg'
 import tshirt1a from './tshirt1a.png'
-import tshirt1b from './tshirt1b.png'
+import ct2 from './ct2.png'
 import tshirt2a from './tshirt2a.png'
-import tshirt2b from './tshirt2b.png'
+import tt2 from './tt2.png'
 import tshirt3a from './tshirt3a.png'
-import tshirt3b from './tshirt3b.png'
+import pt2 from './pt2.png'
 import logo_dark from './logo_dark.png'
 import logo_light from './logo_light.png'
 import cart from './cart.png'
@@ -28,22 +28,21 @@ import hd1 from './hd1.png'
 import hd2 from './hd2.png'
 import hd3 from './hd3.png'
 import hd4 from './hd4.png'
-import ct2m from './ct2m.jpg'
-import ct2w from './ct2w.jpg'
+import w5 from './w5.jpg'
+import w1 from './w1.jpg'
+import turtlehead from './turtlet_head.jpg'
+import grain from './grain.png'
 import tt2w from './tt2w.jpg'
-import tt2m from './tt2m.jpg'
-import pt2w from './pt2w.jpg'
-import pt2m from './pt2m.jpg'
 
 export const assets={
     bg,
     hero,
     tshirt1a,
-    tshirt1b,
+    ct2,
     tshirt2a,
-    tshirt2b,
+    tt2,
     tshirt3a,
-    tshirt3b,
+    pt2,
     logo_light,
     logo_dark,
     cart,
@@ -66,67 +65,38 @@ export const assets={
     hd2,
     hd3,
     hd4,
-    ct2m,
-    ct2w,
+    w5,
+    turtlehead, 
+    grain,
+    w1,
     tt2w,
-    tt2m,
-    pt2w,
-    pt2m,
-
 }
-export const wtshirtData=[
+export const tshirtData=[
     {
         id:1,
         name: 'Black Short Sleeve Cool Tee',
-        price: 19.99,
+        price: "Rs. 1999",
         description: 'A comfortable and stylish unisex black t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
-        images: [tshirt1a, tshirt1b],
-        hoverimage: ct2w,
+        images: [tshirt1a, ct2],
+        hoverimage: ct2,
     },
 
     {
         id:2,
         name: 'White Short Sleeve Turtle Tee',
-        price: 19.99,
+        price: "Rs. 1999",
         description: 'A comfortable and stylish white t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
-        images: [tshirt2a, tshirt2b],
-        hoverimage: tt2w,
+        images: [tshirt2a, tt2],
+        hoverimage: tt2,
     },
     {
         id:3,
         name: 'The Prestige Line T-Shirt',
-        price: 19.99,
+        price: "Rs. 4999",
         description: 'A comfortable and stylish mens t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
-        images: [tshirt3a, tshirt3b],
-        hoverimage: pt2w,
+        images: [tshirt3a, pt2],
+        hoverimage: pt2,
     }
 ]
 
 
-export const mtshirtData=[
-    {
-        id:1,
-        name: 'Black Short Sleeve Cool Tee',
-        price: 19.99,
-        description: 'A comfortable and stylish unisex black t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
-        images: [tshirt1a, tshirt1b],
-        hoverimage: ct2m,
-    },
-
-    {
-        id:2,
-        name: 'White Short Sleeve Turtle Tee',
-        price: 19.99,
-        description: 'A comfortable and stylish white t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
-        images: [tshirt2a, tshirt2b],
-        hoverimage: tt2m,
-    },
-    {
-        id:3,
-        name: 'The Prestige Line Mens T-Shirt',
-        price: 19.99,
-        description: 'A comfortable and stylish mens t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
-        images: [tshirt3a, tshirt3b],
-        hoverimage: pt2m,
-    }
-]

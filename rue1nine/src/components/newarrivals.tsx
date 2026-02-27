@@ -1,5 +1,5 @@
 import { assets } from '../assets/assets'
-import { wtshirtData } from '../assets/assets'
+import { tshirtData } from '../assets/assets'
 import { useNavigate } from "react-router-dom"
 
 
@@ -18,7 +18,7 @@ function NewArrivals() {
         </div>
 
         <div className="backdrop-blur sm:flex sm:flex-col md:grid md:grid-cols-3 px-4 items-center justify-center w-full py-4 ml-4 ">
-          {wtshirtData.map((item) => (
+          {tshirtData.map((item) => (
             <div key={item.id}
               className=" backdrop-blur px-4 sm:w-1/2 lg:w-4/5 h-full mb-4 border-1 border-gray-500 bg-[#ADB5AB] "
                   onClick={() => {

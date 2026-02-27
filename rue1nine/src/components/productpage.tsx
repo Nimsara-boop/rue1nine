@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom"
-import { mtshirtData } from "../assets/assets"
+import { tshirtData } from "../assets/assets"
 import { useState } from "react"
 
 
 
 function ProductPage() {
   const { id } = useParams()
-  const product =mtshirtData.find( (item)=>item.id===Number(id))
+  const product =tshirtData.find( (item)=>item.id===Number(id))
 
   if (!product) {
     return <div className="pt-24">Product not found</div>
@@ -43,7 +43,7 @@ function ProductPage() {
         </h1>
 
         <p className="text-xl text-gray-600 mt-4">
-          ${product.price}
+          {product.price}
         </p>
 
         <p className="mt-6 text-gray-700 leading-relaxed">
