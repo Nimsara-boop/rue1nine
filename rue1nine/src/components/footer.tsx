@@ -8,11 +8,13 @@ function Footer() {
         {/* Brand / Logo */}
         <div className="flex flex-col items-start">
           <img src={assets.logo_dark} className='w-40'/>
-          <p className="text-gray-400 text-sm">
-            Premium products for a sophisticated lifestyle.
-          </p>
+          <div className="text-gray-400 text-sm">
+          <p>
+RUE1NINE delivers high graphic energy with accessible premium.</p><p>
+  Designed to be bold. Built to be personal.</p>
+ <p> Because luxury is a mindset — not a price tag.          </p>
         </div>
-
+</div>
         {/* Customer Support */}
         <div className="flex flex-col">
           <h3 className="text-lg font-semibold mb-2">Customer Support</h3>

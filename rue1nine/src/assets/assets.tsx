@@ -20,7 +20,6 @@ import women2 from './women2.png'
 import f_turtle_1 from './f_turtle_1.jpg'
 import f_turtle_2 from './f_turtle_2.jpg'
 import prestige from './prestige.jpg'
-import newarrivals from './newarrivals.png'
 import hero_prestige from './hero_prestige.jpg'
 import mens2 from './mens2.jpg'
 import new2 from './new2.jpg'
@@ -33,6 +32,8 @@ import w1 from './w1.jpg'
 import turtlehead from './turtlet_head.jpg'
 import grain from './grain.png'
 import tt2w from './tt2w.jpg'
+import coolt_head from './coolt_head.jpg'
+import rw2 from './rw2.jpg'
 
 export const assets={
     bg,
@@ -55,7 +56,6 @@ export const assets={
     WomenSection,
     women2,
     prestige,
-    newarrivals,
     hero_prestige,
     f_turtle_1 ,
     f_turtle_2,
@@ -70,6 +70,8 @@ export const assets={
     grain,
     w1,
     tt2w,
+    coolt_head,
+    rw2,
 }
 export const tshirtData=[
     {

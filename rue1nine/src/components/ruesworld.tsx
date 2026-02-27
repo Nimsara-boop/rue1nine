@@ -37,7 +37,7 @@ export default function RuesWorld() {
 
         {/* IMAGE */}
         <img
-          src={assets.f_turtle_2} 
+          src={assets.hd1} 
           className="absolute inset-0 w-full h-full object-cover"
           alt=""
         />
@@ -46,7 +46,7 @@ export default function RuesWorld() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/80" />
 
         {/* GRAIN */}
-        <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-overlay" style={{ backgroundImage: `url(${assets.grain})` }} />
+        <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-overlay" style={{ backgroundImage: `url(${assets.grain})`, backgroundRepeat: "repeat", backgroundSize: "300px" }} />
 
         <motion.div
           initial="hidden"
@@ -54,7 +54,7 @@ export default function RuesWorld() {
           variants={reveal}
           className="relative text-center px-6"
         >
-          <h1 className="uppercase font-extrabold tracking-tight text-[12vw] leading-none">
+          <h1 className="uppercase font-extrabold tracking-widest pt-20 text-[12vw] leading-none">
             RUE’S WORLD
           </h1>
 
@@ -99,7 +99,7 @@ export default function RuesWorld() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            src={assets.w1} /* INSERT VERTICAL SHOOT */
+            src={assets.coolt_head}
             className="w-full h-[600px] object-cover"
             alt=""
           />
@@ -130,10 +130,10 @@ export default function RuesWorld() {
       </section>
 
       {/* ================= HIGH GRAPHIC ================= */}
-      <section className="relative bg-[#ECECEC] text-black py-40 overflow-hidden">
+      <section className="relative bg-[#F5F5F5] text-black py-40 overflow-hidden">
 
         {/* MASSIVE BACKGROUND TEXT */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center opacity-10 pointer-events-none">
+        <div className="absolute inset-0 flex flex-col justify-center items-center opacity-10 pointer-events-none" >
           <h1 className="text-[15vw] font-black uppercase leading-none">
             HIGH.
           </h1>
@@ -163,7 +163,7 @@ export default function RuesWorld() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          src={assets.tt2w} /* INSERT WIDE IMAGE */
+          src={assets.rw2} /* INSERT WIDE IMAGE */
           className="mt-20 w-full h-[600px] object-cover"
           alt=""
         />
@@ -198,9 +198,7 @@ export default function RuesWorld() {
             Add your story. Add your name. Add your code.
           </p>
 
-          <button className="mt-8 bg-white text-black px-10 py-4 uppercase tracking-widest hover:scale-105 transition-all duration-500">
-            CUSTOMIZE →
-          </button>
+
         </motion.div>
       </section>
 
@@ -244,7 +242,8 @@ export default function RuesWorld() {
             WELCOME TO RUE’S WORLD.
           </p>
 
-          <button className="mt-10 bg-black text-white px-12 py-4 uppercase tracking-widest hover:bg-red-600 transition-all duration-500">
+          <button className="mt-10 bg-black text-white px-12 py-4 uppercase tracking-widest hover:bg-red-600 transition-all duration-500"
+          onClick={() => {navigate("/"); window.scrollTo({ top: 0, behavior: "smooth" });}}>
             SHOP RUE1NINE →
           </button>
         </motion.div>
