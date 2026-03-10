@@ -1,47 +1,47 @@
-## E-Commerce Website for RUE1NINE
+# E-Commerce Website for RUE1NINE
 
 A modern responsive e-commerce website for a clothing brand, built with React, Tailwind CSS, and React Router.
 This project was developed as a real-world client project to provide the brand with an online storefront to showcase products and allow customers to browse and purchase apparel.
 
 The goal of this project is to create a fast, visually appealing, and mobile-friendly shopping experience while maintaining a clean and maintainable codebase.
 
-# Project Overview
+## Project Overview
 
 This application allows customers to:
 
-  Browse clothing collections
+  -Browse clothing collections
 
-  View new arrivals
+  -View new arrivals
 
-  Explore individual product pages
+  -Explore individual product pages
 
-  Add items to a shopping cart
+  -Add items to a shopping cart
 
-  Navigate seamlessly between pages
+  -Navigate seamlessly between pages
 
-  Experience smooth animations and responsive design across devices
+  -Experience smooth animations and responsive design across devices
 
 The project focuses heavily on clean UI/UX design, performance, and scalable frontend architecture.
 
-# Features
+## Features
 
 Product Showcase
 
-  Dedicated sections for featured products and new arrivals
+  -Dedicated sections for featured products and new arrivals
 
-  High-quality product imagery
+  -High-quality product imagery
 
-  Clean layout optimized for fashion retail
+  -Clean layout optimized for fashion retail
 
-  Responsive Design
+  -Responsive Design
 
 Optimized for:
 
-  Desktop
+  -Desktop
 
-  Tablets
+  -Tablets
 
-  Mobile devices
+  -Mobile devices
 
 Tailwind CSS responsive utilities ensure consistent layouts across screen sizes.
 
@@ -65,25 +65,25 @@ Add items to cart functionality
 
 Planned features include quantity management and checkout flow.
 
-# Tech Stack
+## Tech Stack
 
 Frontend
 
-  React
+  -React
 
-  React Router
+  -React Router
 
-  Tailwind CSS
+  -Tailwind CSS
 
 Development Tools
 
-  Vite
+  -Vite
 
-  Git & GitHub
+  -Git & GitHub
 
-  VS Code
+  -VS Code
 
-# Project Structure
+## Project Structure
 
 src
  ┣ assets
@@ -100,65 +100,65 @@ src
  ┣ App.jsx
  ┗ main.jsx
  
-# Key UI Sections
+## Key UI Sections
 
-Hero Section
+-Hero Section
 
   Landing section highlighting the brand identity and latest collections.
 
-New Arrivals
+-New Arrivals
 
   Displays the latest products added to the store with modern card layouts.
 
-Product Pages
+-Product Pages
 
   Individual product views showing images, details, and purchase options.
 
-Navigation
+-Navigation
 
-  Simple and elegant navbar allowing smooth scrolling between sections.
+  -Simple and elegant navbar allowing smooth scrolling between sections.
 
-# Design Goals
+## Design Goals
 
 The UI was designed to reflect a premium fashion aesthetic while keeping the interface minimal and user-friendly.
 
 Focus areas included:
 
-  Large, clean product visuals
+  -Large, clean product visuals
 
-  Smooth interactions
+  -Smooth interactions
 
-  Minimalistic layouts
+  -Minimalistic layouts
 
-  High readability
+  -High readability
 
-  Mobile-first design
+  -Mobile-first design
 
-# Future Improvements
+## Future Improvements
 
 Planned features for upcoming versions:
 
-  Full shopping cart functionality
+  -Full shopping cart functionality
 
-  Checkout system
+  -Checkout system
 
-  Payment gateway integration
+  -Payment gateway integration
 
-  Product filtering and search
+  -Product filtering and search
 
-  Inventory management
+  -Inventory management
 
-  Admin dashboard
+  -Admin dashboard
 
-  Backend integration for product management
+  -Backend integration for product management
 
-  Authentication for customers
+  -Authentication for customers
 
-  Installation
+  -Installation
 
-# Clone the repository:
+## Clone the repository:
 
-git clone https://github.com/yourusername/your-repo-name.git
+    git clone https://github.com/yourusername/your-repo-name.git
 
 Navigate to the project directory:
 
@@ -175,7 +175,7 @@ Screenshots
 
 (Add screenshots of the homepage, product pages, and mobile layout here once available.)
 
-# License
+## License
 
 This project was developed as a client project for a clothing brand.
 Usage or redistribution of brand assets without permission is not allowed.
