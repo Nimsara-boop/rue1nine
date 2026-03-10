@@ -162,18 +162,24 @@ Planned features for upcoming versions:
 
 Navigate to the project directory:
 
-cd your-repo-name
+    cd your-repo-name
 
 Install dependencies:
 
-npm install
+    npm install
 
 Run the development server:
 
-npm run dev
-Screenshots
+    npm run dev
+    
+#Screenshots
 
-(Add screenshots of the homepage, product pages, and mobile layout here once available.)
+<img width="1919" height="931" alt="Screenshot 2026-03-10 091740" src="https://github.com/user-attachments/assets/3a2ad620-5ae9-44ae-9e37-ab9824827261" />
+  <img width="1919" height="937" alt="Screenshot 2026-03-10 091832" src="https://github.com/user-attachments/assets/8e7645cf-aece-4a7b-b616-2a2b9c513bc6" />
+  <img width="1919" height="948" alt="Screenshot 2026-03-10 091924" src="https://github.com/user-attachments/assets/b75952e4-cbe0-4e32-a795-a97d9dc19e99" />
+![WhatsApp Image 2026-03-10 at 09 22 10](https://github.com/user-attachments/assets/5a9c41ed-cfb5-4b95-a28f-5a237c9adf34)
+
+
 
 ## License
 
