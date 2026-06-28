@@ -6,14 +6,14 @@ function WomenSection() {
   const navigate = useNavigate()
 
   return (
-    <div id='WomenSection' className="flex flex-col items-center justify-center overflow-clip pl-4"
+    <div id='WomenSection' className="flex flex-col items-center justify-center overflow-hidden px-3 sm:px-4"
     style={{ backgroundImage: `url(${assets.w5})` }}
     >
-      <div className='mt-23 py-8 px-4 font-light'>Filters</div>
-      <div className="  sm:flex sm:flex-col md:grid md:grid-cols-3 px-4 items-center justify-center w-full py-4 ml-4 overflow-hidden ">
+      <div className='mt-23 py-8 px-4 font-light self-start'>Filters</div>
+      <div className="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 py-4 overflow-hidden">
         {tshirtData.map((item) => (
           <div key={item.id}
-            className=" px-4 sm:w-1/2 lg:w-4/5 h-full mb-4 border-gray-500 bg-[#ADB5AB] "
+            className="w-full h-full border border-gray-500 bg-[#ADB5AB]"
             onClick={() => {
               if (item.id === 3) {
                 navigate("/PrestigeLine");
@@ -26,14 +26,14 @@ function WomenSection() {
 
 
           >
-            <img src={item.images[0]} alt={item.name} className=" mt-10 w-full h-100 object-cover" />
-            <h2 className='font-light text-xl'>{item.name}</h2>
-            <p>{item.price}</p>
+            <img src={item.images[0]} alt={item.name} className="mt-6 w-full h-72 sm:h-80 md:h-96 object-cover" />
+            <h2 className='font-light text-lg sm:text-xl px-4 py-2'>{item.name}</h2>
+            <p className='px-4 pb-4'>{item.price}</p>
           </div>
         ))}
       </div>
 
-      <div className='text-white mt-12 text-4xl font-light mb-8'>- End of Collection -</div>
+      <div className='text-white mt-10 text-2xl sm:text-4xl font-light mb-8 text-center'>- End of Collection -</div>
 
     </div>
   )

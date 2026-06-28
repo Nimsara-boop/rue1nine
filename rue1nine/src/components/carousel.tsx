@@ -34,30 +34,30 @@ export default function Carousel() {
   });
 
   return (
-    <div className="w-full overflow-hidden pb-12">
+    <div className="w-full overflow-hidden pb-8 md:pb-12">
       <motion.div
         style={{ x }}
         className="flex"
       >
         {/* ORIGINAL */}
-        <div ref={originalRef} className="flex gap-16 px-16">
+        <div ref={originalRef} className="flex gap-4 md:gap-16 px-4 md:px-16">
           {images.map((src, index) => (
             <img
               key={index}
               src={src}
-              className="w-[500px] h-[300px] object-cover rounded-2xl shadow-lg flex-shrink-0"
+              className="w-[72vw] sm:w-[60vw] md:w-[500px] h-[42vw] sm:h-[34vw] md:h-[300px] object-cover rounded-2xl shadow-lg flex-shrink-0"
               alt=""
             />
           ))}
         </div>
 
         {/* DUPLICATE */}
-        <div className="flex gap-16">
+        <div className="flex gap-4 md:gap-16">
           {images.map((src, index) => (
             <img
               key={`dup-${index}`}
               src={src}
-              className="w-[500px] h-[300px] object-cover rounded-2xl shadow-lg flex-shrink-0"
+              className="w-[72vw] sm:w-[60vw] md:w-[500px] h-[42vw] sm:h-[34vw] md:h-[300px] object-cover rounded-2xl shadow-lg flex-shrink-0"
               alt=""
             />
           ))}
