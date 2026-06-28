@@ -23,7 +23,7 @@ function ProductPage() {
                 <img key={index} alt={product.name}
                 src={image}
                 onClick={() => setSelectedImage(image)}
-                className={`cursor-pointer w-20 h-20 sm:w-full sm:h-auto object-cover sm:px-2 sm:pb-2 flex-shrink-0 ${selectedImage === image ? 'opacity-100' : 'opacity-70'}`}
+                className={`cursor-pointer w-20 h-20 sm:w-full sm:h-full object-cover sm:px-2 sm:pb-2 flex-shrink-0 ${selectedImage === image ? 'opacity-100' : 'opacity-70'}`}
                 />
             ))}
         </div>

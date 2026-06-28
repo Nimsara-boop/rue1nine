@@ -62,8 +62,8 @@ export default function RuesWorld() {
             PREMIUM IS A MINDSET. <br /> NOT A PRICE TAG.
           </p>
 
-          <button className="mt-8 border border-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-500" onClick={() => {navigate("/"); window.scrollTo({ top: 0, behavior: "smooth" });}}>
-            Enter The Movement →
+          <button className="mt-8 border border-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-500" onClick={() => {navigate("/Home"); window.scrollTo({ top: 0, behavior: "smooth" });}}>
+              Enter The Movement →
           </button>
         </motion.div>
       </section>

@@ -14,7 +14,7 @@ function Home() {
             {/*    HEADER   */}
 
             <div className="min-h-screen bg-scroll md:bg-fixed bg-cover bg-center flex flex-col items-center justify-center w-full overflow-hidden"
-                style={{ backgroundImage: `url(${assets.bg})` }}
+                style={{ backgroundColor: 'rgba(255, 255, 255, 1)' }}
                 id='Header'>
                 <div className='pt-28 md:pt-40 px-4'>
                     <Carousel />
