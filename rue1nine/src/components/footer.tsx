@@ -19,10 +19,10 @@ RUE1NINE delivers high graphic energy with accessible premium.</p><p>
         <div className="flex flex-col">
           <h3 className="text-lg font-semibold mb-2">Customer Support</h3>
           <a
-            href="tel:+94728733580"
+            href="tel:+9474339130"
             className="hover:text-gray-300 transition-colors duration-200"
           >
-            +94 72 873 3580
+            +94 74 339 130
           </a>
           <p className="text-gray-400 text-sm mt-1">Available 9am - 6pm IST</p>
         </div>

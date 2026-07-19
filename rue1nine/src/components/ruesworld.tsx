@@ -35,28 +35,13 @@ export default function RuesWorld() {
       {/* ================= HERO ================= */}
       <section className="relative h-screen w-full flex items-center justify-center">
 
-        {/* IMAGE */}
-        <img
-          src={assets.hd1} 
-          className="absolute inset-0 w-full h-full object-cover"
-          alt=""
-        />
-
-        {/* DARK GRADIENT */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/80" />
-
-        {/* GRAIN */}
-        <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-overlay" style={{ backgroundImage: `url(${assets.grain})`, backgroundRepeat: "repeat", backgroundSize: "300px" }} />
-
         <motion.div
           initial="hidden"
           animate="visible"
           variants={reveal}
           className="relative text-center px-6"
         >
-          <h1 className="uppercase font-extrabold tracking-widest pt-20 text-[12vw] leading-none">
-            RUE’S WORLD
-          </h1>
+          <img src={assets.logo_dark} alt="Logo" className="w-100 h-20  mx-auto" />
 
           <p className="mt-6 text-lg md:text-xl tracking-wide">
             PREMIUM IS A MINDSET. <br /> NOT A PRICE TAG.
@@ -122,7 +107,7 @@ export default function RuesWorld() {
             </p>
 
             <button className="mt-8 border-b-2 border-black uppercase tracking-widest text-sm hover:tracking-wider transition-all"
-            onClick={() => {navigate("/PrestigeLine"); window.scrollTo({ top: 0, behavior: "smooth" });}}>
+            onClick={() => {navigate("/home"); window.scrollTo({ top: 0, behavior: "smooth" });}}>
               CREATE YOURS →
             </button>
           </motion.div>
@@ -202,27 +187,10 @@ export default function RuesWorld() {
         </motion.div>
       </section>
 
-      {/* ================= IMPACT ================= */}
-      <section className="bg-black py-32 px-6 text-center">
-        {[
-          "01. AFFORDABLE",
-          "02. HIGH GRAPHIC",
-          "03. PERSONAL",
-          "04. UNAPOLOGETIC",
-        ].map((item, i) => (
-          <h2
-            key={i}
-            className="text-5xl md:text-7xl font-black uppercase my-10 text-transparent stroke-text hover:text-white transition-all duration-500 cursor-pointer"
-          >
-            {item}
-          </h2>
-        ))}
-      </section>
-
       {/* ================= MARQUEE ================= */}
       <section className="bg-white text-black py-8 overflow-hidden">
-        <div className="whitespace-nowrap animate-marquee text-4xl font-black uppercase tracking-widest">
-          RUE1NINE RUE1NINE RUE1NINE RUE1NINE RUE1NINE RUE1NINE
+        <div className="flex whitespace-nowrap animate-marquee text-4xl font-black uppercase tracking-widest">
+          <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/>  <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/>  <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/>  <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> 
         </div>
       </section>
 

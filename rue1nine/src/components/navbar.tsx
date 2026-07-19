@@ -14,7 +14,7 @@ function Navbar() {
             animate={{ y: '0%', opacity: 1 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
         >
-            <div className="w-full flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-center px-4 py-4 md:px-20 lg:px-32 bg-white/20 backdrop-blur-md shadow-md md:py-8">
+            <div className="w-full flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-center px-4 py-4 md:px-18 lg:px-32 bg-white/20 backdrop-blur-md shadow-md md:py-8">
                 <ul className="flex justify-center sm:justify-start">
                     <img src={assets.logo_light} alt="Logo" className="w-32"
                         onClick={() => {
@@ -24,7 +24,7 @@ function Navbar() {
                     />
                 </ul>
 
-                <ul className='flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-5 font-light text-sm sm:text-base md:text-xl tracking-widest text-center'>
+                <ul className='flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-5 font-light text-sm sm:text-base md:text-xl tracking-widest text-center weight-20'>
                     <a href="#ruesWorld"
                         className="cursor-pointer text-black px-2 sm:px-4 hover:scale-110"
                         onClick={() => {
@@ -35,7 +35,7 @@ function Navbar() {
                     </a>
 
                     <a href="#Header"
-                        className="cursor-pointer text-black px-2 sm:px-4 hover:scale-110"
+                        className="cursor-pointer text-black px-2 sm:px-4 font-weight-20 hover:scale-110 "
                         onClick={() => {
                             navigate("/home");
                             window.scrollTo({ top: 0, behavior: "smooth" });
@@ -62,7 +62,6 @@ function Navbar() {
 
 
                 </ul>
-                {/*<button><img src={assets.cart} alt="cart" className="hidden md:block ml-10 px-8  w-24 h-8" /></button>*/}
             </div>
         </motion.div>
     )

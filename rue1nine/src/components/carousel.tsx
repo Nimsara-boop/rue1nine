@@ -2,8 +2,8 @@ import { motion, useAnimationFrame, useMotionValue } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { assets } from "../assets/assets";
 
-const images = [assets.hd1, assets.hd2, assets.hd3, assets.hd4];
-const loopCount = 2;
+const images = [assets.hd3, assets.hd4];
+const loopCount = 1000;
 
 export default function Carousel() {
   const x = useMotionValue(0);

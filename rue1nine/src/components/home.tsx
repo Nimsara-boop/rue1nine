@@ -75,7 +75,7 @@ function Home() {
                 {/*    New Arrivals  */}
 
                 <div className="bg-cover bg-center cursor-pointer mb-8 w-full md:w-3/4 overflow-hidden min-h-[62vh] md:min-h-[80vh] flex items-end"
-                    style={{ backgroundImage: `url(${assets.new2})` }}
+                    style={{ backgroundImage: `url(${assets.tt2w})` }}
                     id='NewArrivals'
                     onClick={() => {
                         navigate(`/NewArrivals`);
@@ -95,7 +95,7 @@ function Home() {
 
                 </div>
 
-                {/*    Prestige Line    */}
+                {/*    Prestige Line    
 
                 <div className="min-h-[70vh] md:min-h-screen bg-cover bg-center w-full overflow-hidden hover:cursor-pointer bg-scroll md:bg-center"
                     style={{ backgroundImage: `url(${assets.prestige})` }}
@@ -114,7 +114,7 @@ function Home() {
                         </button>
                     </div>
 
-                </div>
+                </div>*/}
 
             </div>
         </div>

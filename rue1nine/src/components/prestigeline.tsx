@@ -2,16 +2,13 @@ import { assets } from '../assets/assets'
 
 
 function PrestigeLine() {
-  return (
+  return ({/*}
     <div>
       <div className="min-h-screen bg-cover bg-scroll md:bg-fixed bg-center w-full overflow-hidden"
         id='NewArrivals'
         style={{backgroundImage: `url(${assets.hero_prestige})` }}>
         
-        {/* Optional Dark Overlay
-        <div className="absolute inset-0 bg-black/20"></div>*/} 
 
-        {/* Content */}
         <div className="relative backdrop-blur flex flex-col items-center justify-center min-h-screen px-4 text-center gap-4">
           <img src={assets.logo_dark} className="w-32 sm:w-40 md:w-1/5"/>
           <h1 className="text-gray-200 font-light text-4xl sm:text-6xl md:text-8xl leading-tight">The Prestige Line</h1>
@@ -25,7 +22,7 @@ function PrestigeLine() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
   )
 }
 
