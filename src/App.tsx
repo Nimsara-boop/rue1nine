@@ -6,7 +6,7 @@ import NewArrivals from './components/newarrivals'
 import Home from './components/home'
 import MenSection from './components/mensection'
 import WomenSection from './components/womensection'
-import ProductPage from './components/productpage'
+import ProductPage from './components/productpage.tsx'
 import RuesWorld from './components/ruesworld'
 
 function App() {  

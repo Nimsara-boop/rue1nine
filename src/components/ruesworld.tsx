@@ -2,8 +2,17 @@
 import { assets } from "../assets/assets";
 import { motion, useScroll, useTransform } from "framer-motion";
 import type { Variants } from "framer-motion";
-import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+
+
+const heroImages = [
+  assets.bg_0,
+  assets.bg_1,
+  assets.bg_2,
+  assets.bg_3,
+  assets.bg_4,
+];
 
 export default function RuesWorld() {
   const navigate = useNavigate();
@@ -13,42 +22,69 @@ export default function RuesWorld() {
     offset: ["start end", "end start"],
   });
 
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % heroImages.length);
+    }, 3000);
+    return () => clearInterval(id);
+  }, []);
+
   const yParallax = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
 
   const reveal: Variants = {
-  hidden: {
-    opacity: 0,
-    y: 60,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.9,
-      ease: [0.22, 1, 0.36, 1], // cubic-bezier luxury ease
+    hidden: {
+      opacity: 0,
+      y: 60,
     },
-  },
-};
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.9,
+        ease: [0.22, 1, 0.36, 1], // cubic-bezier luxury ease
+      },
+    },
+  };
   return (
-    <main className="bg-black text-white overflow-hidden">
+    <main className="text-white overflow-hidden min-h-screen bg-black">
 
       {/* ================= HERO ================= */}
-      <section className="relative h-screen w-full flex items-center justify-center">
+      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        {/* background slideshow */}
+        {heroImages.map((img, i) => (
+          <div
+            key={i}
+            className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-5000 ease-in-out ${i === current ? "opacity-100" : "opacity-0"
+              }`}
+            style={{ backgroundImage: `url(${img})` }}
+          />
+        ))}
+
+        {/* dark overlay */}
+        <div className="absolute inset-0 bg-black/40" />
 
         <motion.div
           initial="hidden"
           animate="visible"
           variants={reveal}
-          className="relative text-center px-6"
+          className="relative z-10 text-center px-6"
         >
-          <img src={assets.logo_dark} alt="Logo" className="w-100 h-20  mx-auto" />
+          <img src={assets.logo_dark} alt="Logo" className="w-100 h-20 mx-auto" />
 
           <p className="mt-6 text-lg md:text-xl tracking-wide">
             PREMIUM IS A MINDSET. <br /> NOT A PRICE TAG.
           </p>
 
-          <button className="mt-8 border border-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-500" onClick={() => {navigate("/Home"); window.scrollTo({ top: 0, behavior: "smooth" });}}>
-              Enter The Movement →
+          <button
+            className="mt-8 border border-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-500"
+            onClick={() => {
+              navigate("/Home");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            Enter The Movement →
           </button>
         </motion.div>
       </section>
@@ -107,7 +143,7 @@ export default function RuesWorld() {
             </p>
 
             <button className="mt-8 border-b-2 border-black uppercase tracking-widest text-sm hover:tracking-wider transition-all"
-            onClick={() => {navigate("/home"); window.scrollTo({ top: 0, behavior: "smooth" });}}>
+              onClick={() => { navigate("/home"); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
               CREATE YOURS →
             </button>
           </motion.div>
@@ -190,7 +226,7 @@ export default function RuesWorld() {
       {/* ================= MARQUEE ================= */}
       <section className="bg-white text-black py-8 overflow-hidden">
         <div className="flex whitespace-nowrap animate-marquee text-4xl font-black uppercase tracking-widest">
-          <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/>  <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/>  <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/>  <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4"/> 
+          <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4" /> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4" /> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4" />  <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4" />  <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4" />  <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4" /> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4" /> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4" /> <img src={assets.logo_light} alt="Logo" className="inline-block w-40 h-8 mr-4" />
         </div>
       </section>
 
@@ -211,7 +247,7 @@ export default function RuesWorld() {
           </p>
 
           <button className="mt-10 bg-black text-white px-12 py-4 uppercase tracking-widest hover:bg-red-600 transition-all duration-500"
-          onClick={() => {navigate("/"); window.scrollTo({ top: 0, behavior: "smooth" });}}>
+            onClick={() => { navigate("/"); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
             SHOP RUE1NINE →
           </button>
         </motion.div>

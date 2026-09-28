@@ -1,13 +1,19 @@
 import { useParams } from "react-router-dom"
-import { tshirtData, tshirtDataWomen } from "../assets/assets"
+import { tshirtDataNewArrivals, tshirtDataWomen, tshirtDataMen } from "../assets/assets"
 import { useState } from "react"
-
+import { useNavigate } from "react-router-dom"
+import { assets } from '../assets/assets'
+import './productpage.js'
+import './productpage.css'
 
 
 function ProductPage() {
+  const navigate = useNavigate();
   const { id } = useParams()
-  const product = tshirtData.find((item) => item.id === Number(id)) || tshirtDataWomen.find((item) => item.id === Number(id))
+  const product = tshirtDataMen.find((item) => item.id === String(id)) || tshirtDataWomen.find((item) => item.id === String(id)) || tshirtDataNewArrivals.find((item) => item.id === String(id))
   const [selectedImage, setSelectedImage] = useState(product?.images[0] ?? "")
+  const [selectedSize, setSelectedSize] = useState("")
+  const [showSizeWarning, setShowSizeWarning] = useState(false)
 
   if (!product) {
     return <div className="pt-24">Product not found</div>
@@ -42,26 +48,85 @@ function ProductPage() {
 
       {/* Content Section */}
       <div>
-        <h1 className="text-3xl font-semibold">
+        <h1 className="text-3xl font-mono">
           {product.name}
         </h1>
 
-        <p className="text-xl text-gray-600 mt-4">
+        <p className="text-xl text-gray-600 mt-4 font-mono">
           {product.price}
         </p>
 
-        <p className="mt-6 text-gray-700 leading-relaxed">
+        <p className="mt-6 text-gray-700 leading-relaxed font-mono text-sm">
           {product.description}
         </p>
 
-        <button className="mt-8 bg-black text-white px-6 py-3 hover:bg-gray-800 transition"
+        <div className="item-sizes mt-4">
+          {["XL", "L", "M", "S"].map((size) => (
+            <span
+              key={size}
+              className={selectedSize === size ? "selected" : ""}
+              onClick={() => setSelectedSize(size)}
+            >
+              {size}
+            </span>
+          ))}
+        </div>
+
+        <button
+          className="mt-8 bg-black text-white px-6 py-3 hover:bg-gray-800 transition mb-20"
           onClick={() => {
-            window.location.href = "https://wa.me/9474339130?text=I'm%20interested%20in%20the%20product:%20" + encodeURIComponent(product.name);
-          }}>
+            if (!selectedSize) {
+              setShowSizeWarning(true);
+              return;
+            }
+            const message = `I'm interested in the product: ${product.name} in size ${selectedSize} with price ${product.price}`;
+            window.open(`https://wa.me/94743391530?text=${encodeURIComponent(message)}`, "_blank");
+          }}
+        >
           Order Now
         </button>
+
+        {showSizeWarning && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+            <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
+              <p className="mb-4 text-lg">Please select a size.</p>
+              <button
+                className="bg-black text-white px-6 py-2 hover:bg-gray-800 transition"
+                onClick={() => setShowSizeWarning(false)}
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
+      {/*Browse More Section*/}
+      <div className="browse-more md:col-span-2">
+        <h3>Browse More</h3>
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 py-10">
+          {tshirtDataNewArrivals.map((item) => (
+            <div key={item.id}
+              className="group w-full h-full bg-[#000000]/90"
+              onClick={() => {
+                navigate(`/product/${item.id}`);
+
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              <div className="relative w-full h-100 sm:h-80 md:h-100">
+                <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" />
+                <img src={item.hoverimage} alt={item.name} className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              </div>
+              <div className="p-10">
+                <img src={assets.logo_dark} alt="Logo" className=" w-16 h-4" />
+                <h2 className='font-light text-lg sm:text-xl py-2 text-gray-200'>{item.name}</h2>
+                <p className='text-sm text-gray-400 font-semibold'>{item.price}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
     </div >
   )
