@@ -1,9 +1,7 @@
 import { assets } from '../assets/assets'
-import { useNavigate, } from 'react-router-dom'
 import { tshirtDataWomen } from '../assets/assets'
 
 function WomenSection() {
-  const navigate = useNavigate()
 
   return (
     <div id='WomenSection' className="flex flex-col items-center justify-center overflow-hidden px-3 sm:px-4"

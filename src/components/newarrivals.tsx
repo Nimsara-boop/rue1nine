@@ -1,11 +1,7 @@
 import { assets, tshirtDataNewArrivals } from '../assets/assets'
-import { useNavigate } from "react-router-dom"
-
-
 
 function NewArrivals() {
 
-  const navigate = useNavigate();
   return (
     <div>
       <div className="min-h-screen bg-cover bg-center w-full bg-scroll md:bg-fixed overflow-hidden px-3 sm:px-4"

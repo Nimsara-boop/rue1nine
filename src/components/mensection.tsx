@@ -1,18 +1,8 @@
 import { assets } from '../assets/assets'
-import { useNavigate } from 'react-router-dom'
 import { tshirtDataMen } from '../assets/assets'
-import { useEffect, useRef, useState } from "react";
 
-const bgImages = [
-  assets.bg_0,
-  assets.bg_1,
-  assets.bg_2,
-  assets.bg_3,
-  assets.bg_4,
-];
 
 function MenSection() {
-  const navigate = useNavigate()
 
   return (
     <div id='MenSection' className="flex flex-col items-center justify-center overflow-hidden px-3 sm:px-4"

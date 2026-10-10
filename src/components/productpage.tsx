@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom"
 import { tshirtDataNewArrivals, tshirtDataWomen, tshirtDataMen } from "../assets/assets"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 import { assets } from '../assets/assets'
 import { TypeAnimation } from 'react-type-animation';
 import './productpage.js'
@@ -9,7 +8,6 @@ import './productpage.css'
 
 
 function ProductPage() {
-  const navigate = useNavigate();
   const { id } = useParams()
   const product = tshirtDataMen.find((item) => item.id === String(id)) || tshirtDataWomen.find((item) => item.id === String(id)) || tshirtDataNewArrivals.find((item) => item.id === String(id))
   const [selectedImage, setSelectedImage] = useState(product?.images[0] ?? "")
