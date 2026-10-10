@@ -3,6 +3,7 @@ import { tshirtDataNewArrivals, tshirtDataWomen, tshirtDataMen } from "../assets
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { assets } from '../assets/assets'
+import { TypeAnimation } from 'react-type-animation';
 import './productpage.js'
 import './productpage.css'
 
@@ -48,11 +49,19 @@ function ProductPage() {
 
       {/* Content Section */}
       <div>
-        <h1 className="text-3xl font-mono">
-          {product.name}
+        <h1 className="text-3xl font-mono mb-10">
+          <TypeAnimation
+            sequence={[
+              product.name,
+            ]}
+            wrapper="span"
+            speed={20}               // Custom typing speed (higher = faster)
+            style={{ display: 'inline-block'}}
+          />
         </h1>
 
-        <p className="text-xl text-gray-600 mt-4 font-mono">
+
+        <p className="text-lg text-gray-600 mt-4 font-mono font-bold">
           {product.price}
         </p>
 
@@ -106,14 +115,12 @@ function ProductPage() {
         <h3>Browse More</h3>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 py-10">
           {tshirtDataNewArrivals.map((item) => (
-            <div key={item.id}
-              className="group w-full h-full bg-[#000000]/90"
-              onClick={() => {
-                navigate(`/product/${item.id}`);
-
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
+                      <a key={item.id}
+            href={`/product/${item.id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group w-full h-full bg-[#000000]/50 block"
+          >
               <div className="relative w-full h-100 sm:h-80 md:h-100">
                 <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" />
                 <img src={item.hoverimage} alt={item.name} className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -121,9 +128,9 @@ function ProductPage() {
               <div className="p-10">
                 <img src={assets.logo_dark} alt="Logo" className=" w-16 h-4" />
                 <h2 className='font-light text-lg sm:text-xl py-2 text-gray-200'>{item.name}</h2>
-                <p className='text-sm text-gray-400 font-semibold'>{item.price}</p>
+                <p className='text-sm text-gray-800 font-mono font-bold'>{item.price}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

@@ -94,7 +94,7 @@ export const tshirtDataMen = [
     {
         id: "UniBlckCoolTee1901",
         name: 'Unisex Black Short Sleeve Cool Tee',
-        price: "Rs. 1999",
+        price: "LKR 4999",
         description: 'A comfortable and stylish unisex black t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
         images: [tshirt1a, ct2, ct3, ct4],
         hoverimage: ct2,
@@ -103,7 +103,7 @@ export const tshirtDataMen = [
     {
         id: "UniWhtTurtTee1902",
         name: 'Unisex White Short Sleeve Turtle Tee',
-        price: "Rs. 1999",
+        price: "LKR 4999",
         description: 'Calm on the front. Loud on the back. The Unisex White Short Sleeve Turtle Tee is a clean white canvas for a bold ocean-inspired graphic, with a turtle gliding through the waves in big, striking detail. Made for everyone, it pairs easily with anything, whether you are on the beach, on the street, or somewhere in between. Wear it when you want to stand out without saying a word. Premium is a mindset. Not a price tag',
         images: [tshirt2a, tt2, tt3],
         hoverimage: tt2,
@@ -112,7 +112,7 @@ export const tshirtDataMen = [
     {
         id: "Sleeveless1903",
         name: 'Savage Backbone Sleeveless Tee',
-        price: "Rs. 2999",
+        price: "LKR 2999",
         description: 'Built to intimidate. The Savage Backbone Sleeveless Tee is all black, all attitude. A menacing spine-inspired graphic runs the length of the tee, giving your frame a dark, sharp edge. The sleeveless cut shows off your shoulders and arms, so the look is aggressive and unapologetic. Made for the gym, the street, and the nights in between. Wear it when you want to be noticed without saying a word.',
         images: [svless1, svless2, svless3, svless4, svless5],
         hoverimage: svless2,
@@ -120,10 +120,10 @@ export const tshirtDataMen = [
     {
         id: "Noir1904",
         name: 'Noir Force Long Sleeve',
-        price: "Rs. 3999",
+        price: "LKR 5999",
         description: 'Sleek. Silent. Dangerous. The Noir Force Long Sleeve is all black, with serpent-inspired detailing that winds across the tee with quiet, deadly elegance. The full-length sleeves give it a sharp, composed look, while the graphic does the talking. Made for those who move with control and never need to raise their voice. Wear it when you want to command the room without saying a word. Premium is a mindset. Not a price tag.',
         images: [noir2, noir3],
-        hoverimage: noir2,
+        hoverimage: noir3,
     }
 
 ]
@@ -132,7 +132,7 @@ export const tshirtDataWomen = [
     {
         id: "UniBlckCoolTee1901",
         name: 'UnisexBlack Short Sleeve Cool Tee',
-        price: "Rs. 1999",
+        price: "LKR 4999",
         description: 'A comfortable and stylish unisex black t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
         images: [tshirt1a, ct2, ct3, ct4],
         hoverimage: ct2,
@@ -141,7 +141,7 @@ export const tshirtDataWomen = [
     {
         id: "UniWhtTurtTee1902",
         name: 'UnisexWhite Short Sleeve Turtle Tee',
-        price: "Rs. 1999",
+        price: "LKR 4999",
         description: 'Calm on the front. Loud on the back. The Unisex White Short Sleeve Turtle Tee is a clean white canvas for a bold ocean-inspired graphic, with a turtle gliding through the waves in big, striking detail. Made for everyone, it pairs easily with anything, whether you are on the beach, on the street, or somewhere in between. Wear it when you want to stand out without saying a word. Premium is a mindset. Not a price tag',
         images: [tshirt2a, tt2, tt3w, tt4w, tt3],
         hoverimage: tt2,
@@ -149,7 +149,7 @@ export const tshirtDataWomen = [
     {
         id: "WomnsCrpTopMulti1903",
         name: 'Rue1nine Crop Top',
-        price: "Rs. 4999",
+        price: "LKR 6999",
         description: 'Simple. Chic. Effortlessly you. The Rue1nine Crop Top comes in one clean solid color with the signature Rue1nine logo, letting the style speak for itself. Go bold in black, red, dark blue or beige for a sharp, confident look, or go soft in baby pink, baby blue, purple or white for a fresh, feminine vibe. Easy to dress up or down, it pairs perfectly with high-waisted jeans, skirts or your favorite everyday fits. Choose your color, choose your mood. Premium is a mindset. Not a price tag.',
         images: [w_ct_r_1, w_ct_p_2, w_ct_b_2, w_ct_y_1, w_ct_b_3, w_ct_pink_1],
         hoverimage: w_ct_p_2,
@@ -161,7 +161,7 @@ export const tshirtDataNewArrivals = [
     {
         id: "UniBlckCoolTee1901",
         name: 'UnisexBlack Short Sleeve Cool Tee',
-        price: "Rs. 1999",
+        price: "LKR 4999",
         description: 'A comfortable and stylish unisex black t-shirt made from high-quality cotton. Perfect for casual wear and available in various sizes.',
         images: [tshirt1a, ct2, ct3, ct4],
         hoverimage: ct2,
@@ -170,7 +170,7 @@ export const tshirtDataNewArrivals = [
     {
         id: "UnisexWhite Short Sleeve Turtle Tee 1902",
         name: 'UnisexWhite Short Sleeve Turtle Tee',
-        price: "Rs. 1999",
+        price: "LKR 4999",
         description: 'Calm on the front. Loud on the back. The Unisex White Short Sleeve Turtle Tee is a clean white canvas for a bold ocean-inspired graphic, with a turtle gliding through the waves in big, striking detail. Made for everyone, it pairs easily with anything, whether you are on the beach, on the street, or somewhere in between. Wear it when you want to stand out without saying a word. Premium is a mindset. Not a price tag',
         images: [tshirt2a, tt2, tt3w, tt4w, tt3],
         hoverimage: tt2,
@@ -178,7 +178,7 @@ export const tshirtDataNewArrivals = [
     {
         id: "WomnsCrpTopMulti1903",
         name: 'Rue1nine Crop Top',
-        price: "Rs. 4999",
+        price: "LKR 6999",
         description: 'Simple. Chic. Effortlessly you. The Rue1nine Crop Top comes in one clean solid color with the signature Rue1nine logo, letting the style speak for itself. Go bold in black, red, dark blue or beige for a sharp, confident look, or go soft in baby pink, baby blue, purple or white for a fresh, feminine vibe. Easy to dress up or down, it pairs perfectly with high-waisted jeans, skirts or your favorite everyday fits. Choose your color, choose your mood. Premium is a mindset. Not a price tag.',
         images: [w_ct_r_1, w_ct_p_2, w_ct_b_2, w_ct_y_1, w_ct_b_3, w_ct_pink_1],
         hoverimage: w_ct_p_2,
@@ -186,7 +186,7 @@ export const tshirtDataNewArrivals = [
     {
         id: "Savage Backbone Sleeveless Tee 1904",
         name: 'Savage Backbone Sleeveless Tee',
-        price: "Rs. 2999",
+        price: "LKR 3999",
         description: 'Built to intimidate. The Savage Backbone Sleeveless Tee is all black, all attitude. A menacing spine-inspired graphic runs the length of the tee, giving your frame a dark, sharp edge. The sleeveless cut shows off your shoulders and arms, so the look is aggressive and unapologetic. Made for the gym, the street, and the nights in between. Wear it when you want to be noticed without saying a word.',
         images: [svless1, svless2, svless3, svless4, svless5],
         hoverimage: svless2,
@@ -194,10 +194,10 @@ export const tshirtDataNewArrivals = [
     {
         id: "Noir Force Long Sleeve 1905",
         name: 'Noir Force Long Sleeve',
-        price: "Rs. 3999",
+        price: "LKR 5999",
         description: 'Sleek. Silent. Dangerous. The Noir Force Long Sleeve is all black, with serpent-inspired detailing that winds across the tee with quiet, deadly elegance. The full-length sleeves give it a sharp, composed look, while the graphic does the talking. Made for those who move with control and never need to raise their voice. Wear it when you want to command the room without saying a word. Premium is a mindset. Not a price tag.',
         images: [noir2, noir3],
-        hoverimage: noir2,
+        hoverimage: noir3,
     }
 
 

@@ -1,6 +1,15 @@
 import { assets } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
 import { tshirtDataMen } from '../assets/assets'
+import { useEffect, useRef, useState } from "react";
+
+const bgImages = [
+  assets.bg_0,
+  assets.bg_1,
+  assets.bg_2,
+  assets.bg_3,
+  assets.bg_4,
+];
 
 function MenSection() {
   const navigate = useNavigate()
@@ -10,15 +19,11 @@ function MenSection() {
       style={{ backgroundImage: `url(${assets.turtlehead})` }}>
       <div className="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 py-60 overflow-hidden">
         {tshirtDataMen.map((item) => (
-          <div key={item.id}
-            className="group w-full h-full bg-[#000000]/50"
-            onClick={() => {
-              navigate(`/product/${item.id}`);
-
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-
-
+          <a key={item.id}
+            href={`/product/${item.id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group w-full h-full bg-[#000000]/50 block"
           >
             <div className="relative w-full h-100 sm:h-80 md:h-100">
               <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" />
@@ -29,7 +34,7 @@ function MenSection() {
               <h2 className='font-mono text-lg sm:text-xl py-2 text-gray-200'>{item.name}</h2>
               <p className='text-sm text-gray-400 font-mono'>{item.price}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
 

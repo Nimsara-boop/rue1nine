@@ -19,7 +19,7 @@ function Home() {
                 <div className='pt-28 md:pt-40 px-4'>
                     <Carousel />
                 </div>
-                <div className="flex flex-col md:flex-row w-full px-4 sm:px-6 md:px-8 gap-4 md:gap-8 pb-8 overflow-hidden items-center justify-center">
+                <div className="flex flex-col md:flex-row w-full px-4 sm:px-6 md:px-8 gap-4 md:gap-8 overflow-hidden items-center justify-center bg-black/80 py-20 mb-10">
                     <motion.div
                         initial={{ y: '-100vw', opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
