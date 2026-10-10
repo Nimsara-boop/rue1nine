@@ -13,7 +13,6 @@ import tt2 from './tt2.png'
 import logo_dark from './logo_dark.png'
 import logo_light from './logo_light.png'
 import cart from './cart.png'
-import hero from './hero.svg'
 import MenSection from './MenSection.png'
 import WomenSection from './WomenSection.png'
 import women2 from './women2.png'
@@ -51,7 +50,6 @@ export const assets = {
     bg_3,
     bg_4,
     home_bg,
-    hero,
     tshirt1a,
     ct2,
     ct3,
